@@ -16,7 +16,7 @@ function Form (props) {
     return (
     <form className = 'form container' onSubmit={onSubmit}>
         <div>
-            <label>Name
+            <label>
                 <input 
                     type="text"
                     name="name"
@@ -26,7 +26,7 @@ function Form (props) {
                     maxLength="40"
                     />
             </label>
-            <label>Email
+            <label>
                 <input 
                     type="email"
                     name="email"
@@ -36,10 +36,10 @@ function Form (props) {
                     maxLength="20"
                     />
             </label>
-            <label>Role
+            <label>
                 <select name="role" value={values.role}
                 onChange={onChange}>
-                    <option value="">---Select---</option>
+                    <option value="">---Select Role---</option>
                     <option value="Software Engineer">Software Engineer</option>
                     <option value="Front-end Engineer">Front-end Engineer</option>
                     <option value="Back-end Engineer">Back-end Engineer</option>
